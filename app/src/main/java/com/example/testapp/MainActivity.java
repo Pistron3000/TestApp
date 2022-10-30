@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void  startNewActivity3(View v) {
+        Intent intent = new Intent(this, FourthActivity.class);
+        startActivity(intent);
+    }
+
     public void  startNewActivity2(View v) {
         Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);

@@ -67,6 +67,7 @@
         android:layout_marginTop="67dp"
         android:onClick="startNewActivity"
         android:text="Перейти на новую страницу"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_button" />
@@ -76,10 +77,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="startNewActivity2"
-        android:text="ThirdActivity"
+        android:text="Third Activity"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <Button
+        android:id="@+id/button_fourth_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fourth Activity"
+        android:onClick="startNewActivity3"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_third_activity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
