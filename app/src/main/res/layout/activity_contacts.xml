@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
-
-    tools:context=".FourthActivity">
+    tools:context=".ContactsActivity">
 
     <RelativeLayout
         android:id="@+id/upper_bg"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:background="@color/bg2">
 
         <TextView
@@ -19,7 +17,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_bold"
             android:textSize="20sp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="40dp"
             android:text="Hello MOTO"
             android:textColor="@color/white" />
@@ -29,82 +27,24 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_bold"
             android:textSize="14sp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:layout_marginStart="40dp"
             android:text="something is written here"
             android:textColor="@color/bg" />
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/main_box"
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
         android:layout_below="@+id/upper_bg"
-        android:background="@color/white"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="-75dp"
-        >
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Тык"
-            android:layout_marginHorizontal="50dp"
-            android:backgroundTint="@color/bg2"
-            />
-    </RelativeLayout>
-
-    <EditText
-        android:id="@+id/user_name_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/main_box"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Enter your Name"
-        android:inputType="textPersonName"
-        android:minHeight="48dp" />
-
-    <EditText
-        android:id="@+id/text_something"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_below="@id/user_name_field"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Enter something"
-        android:inputType="textMultiLine" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_something"
-        android:layout_marginHorizontal="50sp"
-        android:backgroundTint="@color/bg2"
-        android:onClick="saveDate"
-        android:text="Save"
-        android:textAllCaps="false"
-        android:textColor="@color/white" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_something"
-        android:layout_alignParentEnd="true"
-        android:layout_marginHorizontal="50sp"
-        android:backgroundTint="@color/bg2"
-        android:onClick="getDate"
-        android:text="Download"
-        android:textAllCaps="false"
-        android:textColor="@color/white" />
+        android:layout_above="@+id/bottom_menu"
+        />
 
     <LinearLayout
+        android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -141,7 +81,6 @@
             />
 
     </LinearLayout>
-
 
 
 
