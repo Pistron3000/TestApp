@@ -133,12 +133,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/bg2"
             android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/white"
+            android:onClick="goTestRecycle"
             android:text="Херакс"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/bg2" />
 
     </LinearLayout>
 

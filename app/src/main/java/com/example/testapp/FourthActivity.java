@@ -75,4 +75,9 @@ public class FourthActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FourthActivity.class);
         startActivity(intent);
     }
+
+    public void goTestRecycle(View view){
+        Intent intent = new Intent(this, TestRecycleView.class);
+        startActivity(intent);
+    }
 }
